@@ -1,6 +1,6 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
 ---
-name: Vue Component
+name: RocketVisor Vue Component
 scopeName: text.html.vue
 fileTypes: [vue]
 uuid: 5512c10d-4cc5-434c-b8fc-53b912f55ab3
@@ -196,8 +196,8 @@ patterns:
     - include: source.less
 
 - name: source.css.embedded.html
-  begin: (?:^\s+)?(<)((?i:style))\b(?![^>]*/>)
-  end: (</)((?i:style))(>)(?:\s*\n)?
+  begin: (?:^\s+)?(<)((?i:appstyle))\b(?![^>]*/>)
+  end: (</)((?i:appstyle))(>)(?:\s*\n)?
   captures:
     '1': {name: punctuation.definition.tag.begin.html}
     '2': {name: entity.name.tag.style.html}
@@ -207,7 +207,7 @@ patterns:
   - begin: (>)
     beginCaptures:
       '1': {name: punctuation.definition.tag.end.html}
-    end: (?=</(?i:style))
+    end: (?=</(?i:appstyle))
     patterns:
     - include: source.css
 
