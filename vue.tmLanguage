@@ -27,7 +27,7 @@
 	<key>keyEquivalent</key>
 	<string>^~H</string>
 	<key>name</key>
-	<string>Vue Component</string>
+	<string>RocketVisor Vue Component</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -651,7 +651,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?:^\s+)?(&lt;)((?i:style))\b(?![^&gt;]*/&gt;)</string>
+			<string>(?:^\s+)?(&lt;)((?i:appstyle))\b(?![^&gt;]*/&gt;)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -671,7 +671,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(&lt;/)((?i:style))(&gt;)(?:\s*\n)?</string>
+			<string>(&lt;/)((?i:appstyle))(&gt;)(?:\s*\n)?</string>
 			<key>name</key>
 			<string>source.css.embedded.html</string>
 			<key>patterns</key>
@@ -692,7 +692,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?=&lt;/(?i:style))</string>
+					<string>(?=&lt;/(?i:appstyle))</string>
 					<key>patterns</key>
 					<array>
 						<dict>
